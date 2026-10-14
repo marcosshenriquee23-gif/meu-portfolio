@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1f5f9;
+
+    background: linear-gradient(
+        135deg,
+        #071426,
+        #10294a,
+        #09172b
+    );
+
+    padding: 30px 20px;
+}
+
+/* Página inicial */
+.home {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.foto {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #60a5fa;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.profissao {
+    color: #b8c9df;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 440px;
+}
+
+.links a {
+    display: block;
+    padding: 14px;
+    color: #f8fafc;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid #45658b;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background: #2563eb;
+    border-color: #60a5fa;
+    transform: translateY(-2px);
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.redes-sociais a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.redes-sociais a:hover,
+.link-projeto:hover {
+    color: #ffffff;
+}
+
+/* Páginas internas */
+.pagina-conteudo {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+
+.voltar {
+    display: inline-block;
+    color: #93c5fd;
+    text-decoration: none;
+    margin-bottom: 35px;
+}
+
+.voltar:hover {
+    color: #ffffff;
+}
+
+.pagina-conteudo h1 {
+    color: #60a5fa;
+    margin-bottom: 25px;
+}
+
+.pagina-conteudo p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.projeto {
+    padding: 22px;
+    margin: 20px 0;
+    border: 1px solid #345276;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.projeto h2 {
+    color: #93c5fd;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.link-projeto {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .home {
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .profissao {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .links a {
+        font-size: 14px;
+    }
+
+    .pagina-conteudo {
+        padding: 20px 0;
+    }
+}
